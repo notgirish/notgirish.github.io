@@ -33,7 +33,7 @@ export default function Home() {
       </div>
 
       <div className="w-fit mx-auto mr-0 mt-16 mb-8">
-        <Image src='/assets/kaneki.jpg' width="290" height="420" alt="person" className='-scale-x-100'/>
+        <Image src='/assets/kaneki.jpg' width="290" height="420" alt="person" className='-scale-x-100' priority={true}/>
         {/* <img src='/assets/kaneki.jpg' width="290" height="420" alt="person" className='-scale-x-100' /> */}
       </div>
 
