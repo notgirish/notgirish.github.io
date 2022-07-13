@@ -79,7 +79,7 @@ const Work = () => {
           <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6">
             {
               projectsList.map((e, index) => (
-                <a href={e.link} target="_blank" key={index}>
+                <a href={e.link} target="_blank" rel="noreferrer" key={index}>
                   <div className={`relative cursor-pointer hover:p-1 transform transition-all ease-in duration-200 project-card-${index+1}`}>
                     <div className='absolute top-5 left-5 z-10'>
                       <h2 className={`${e.textDark ? 'text-black' : 'text-white'} text-xl`}>{e.projectName}</h2>
