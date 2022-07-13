@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import Navbar from '../components/Navbar'
 import Head from 'next/head'
 
-
 function MyApp({ Component, pageProps }) {
   return <div className='container'>
     <Head>

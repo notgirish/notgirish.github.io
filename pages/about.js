@@ -41,7 +41,7 @@ const About = () => {
       </section>
 
       <div className="w-fit mx-auto mr-0 mt-20 mb-8">
-        <Image src='/assets/kaneki-reaper.png' width="450" height="300" alt="person" priority={true} />
+        <Image src='/assets/kaneki-reaper.png' width="450" height="300" alt="person" />
         {/* <img src='/assets/kaneki-reaper.png' width="450" height="300" alt="person" /> */}
       </div>
 

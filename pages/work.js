@@ -85,7 +85,7 @@ const Work = () => {
                       <h2 className={`${e.textDark ? 'text-black' : 'text-white'} text-xl`}>{e.projectName}</h2>
                       <p className={`${e.textDark ? 'text-black' : 'text-white'} text-sm`}>{e.workDone}</p>
                     </div>
-                    <Image src={e.imgSource} width={360} height={437} alt="project" objectFit='contain' layout='responsive' priority={true} />
+                    <Image src={e.imgSource} width={360} height={437} alt="project" objectFit='contain' layout='responsive' />
                     {/* <img src={e.imgSource} alt="project"/> */}
                   </div>
                 </a>
