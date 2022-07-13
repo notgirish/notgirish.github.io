@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, Roboto, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer base {
+  @font-face {
+    font-family: "customHeading";
+    font-weight: 700;
+    src: url("../public/assets/fonts/RecklessBold.woff2");
+  }
+
+  @font-face {
+    font-family: "customRegular";
+    font-weight: 400;
+    src: url("../public/assets/fonts/MatterRegular.woff2");
+  }
+
+  @font-face {
+    font-family: "customRegular";
+    font-weight: 700;
+    src: url("../public/assets/fonts/MatterSemiBold.woff2");
+  }
+
+  .centerWrapper {
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }  
+}
+
+body {
+  font-family: customRegular, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: customHeading, serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: rgb(42, 42, 42);
+}
+
+::selection {
+  color: white;
+  background: rgb(42, 42, 42);
+}
+
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+} 
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
